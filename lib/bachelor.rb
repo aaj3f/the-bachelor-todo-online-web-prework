@@ -49,6 +49,9 @@ def get_occupation(data, hometown)
       full_name = contestant.find do |info_item, item_value|
         item_value == hometown
         return contestant["name"]
+      end
+    end
+  end
   #.find returns the first element for which the block returns true
 end
 
