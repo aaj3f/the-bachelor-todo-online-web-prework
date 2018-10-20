@@ -49,6 +49,8 @@ def get_occupation(data, hometown)
       contestant_occupation = contestant.find do |info_item, item_value|
         if item_value == hometown
           return contestant["occupation"]
+        end
+
       end
     end
   end
