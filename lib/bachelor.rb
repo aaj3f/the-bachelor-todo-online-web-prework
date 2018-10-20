@@ -43,10 +43,10 @@ def count_contestants_by_hometown(data, hometown)
 end
 
 def get_occupation(data, hometown)
-  full_name = ""
+  contestant_occupation = ""
   data.each do |season_number, info_array|
     info_array.each do |contestant|
-      full_name = contestant.find do |info_item, item_value|
+      contestant_occupation = contestant.find do |info_item, item_value|
         item_value == hometown
         return contestant["name"]
       end
