@@ -50,7 +50,6 @@ def get_occupation(data, hometown)
         if item_value == hometown
           return contestant["occupation"]
         end
-
       end
     end
   end
