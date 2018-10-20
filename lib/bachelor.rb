@@ -48,7 +48,7 @@ def get_occupation(data, hometown)
     info_array.each do |contestant|
       contestant_occupation = contestant.find do |info_item, item_value|
         item_value == hometown
-        return contestant["name"]
+        return contestant["occupation"]
       end
     end
   end
