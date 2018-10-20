@@ -21,6 +21,11 @@ def get_contestant_name(data, occupation)
       contestant.each do |info_item, item_value|
         if item_value == occupation
           full_name = contestant["name"]
+        end
+      end
+    end
+  end
+  full_name
 end
 
 def count_contestants_by_hometown(data, hometown)
